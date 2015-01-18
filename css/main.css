@@ -1,8 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Open+Sans:400,600,700);
 /* * {
   border: 1px solid black;
-}
- */
+} */
 body {
   padding: 0;
   margin: 0;
@@ -90,3 +89,27 @@ a {
         box-shadow: 0px 5px 0px 0px white; }
     .navbar ul a {
       overflow: hidden; }
+
+.slider {
+  width: 100%; }
+  .slider .slider_back {
+    background: url('../photos/top-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: inherit;
+    border: 8px solid white;
+    height: 400px;
+    margin-right: 20px;
+    -webkit-box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
+    -moz-box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
+    -o-box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
+    box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75); }
+    .slider .slider_back:before {
+      content: '';
+      background: url('../photos/grid.png');
+      opacity: .6; }
+  .slider img {
+    vertical-align: middle;
+    margin-top: 70px;
+    margin-left: 20px; }

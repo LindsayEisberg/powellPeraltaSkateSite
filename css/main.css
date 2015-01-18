@@ -1,5 +1,92 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700|Open+Sans:400,600,700);
+/* * {
+  border: 1px solid black;
+}
+ */
 body {
   padding: 0;
   margin: 0;
-  background: url(../photos/bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../photos/bg.jpg);
   background-size: 100%; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+.wrapper {
+  width: 1024px;
+  margin: 10px auto; }
+
+h1, h2, a {
+  font-family: 'Noto Sans', sans-serif; }
+
+a {
+  color: white; }
+
+.social {
+  float: right; }
+  .social a {
+    text-align: center;
+    display: inline-block;
+    width: 50px;
+    height: 40px;
+    color: white;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.7);
+    padding-top: 10px;
+    margin-right: 20px; }
+    .social a:hover {
+      border-bottom: 5px solid white; }
+
+.fa {
+  opacity: 0.7; }
+  .fa:hover {
+    opacity: 1; }
+
+.facebook {
+  background-color: #445897; }
+
+.rss {
+  background-color: #cc8f32; }
+
+.twitter {
+  background-color: #6a8dc7; }
+
+.youtube {
+  background-color: #b2382d; }
+
+.navbar {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%; }
+  .navbar ul {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+    .navbar ul li {
+      display: inline-block;
+      width: 22.75%;
+      text-align: center;
+      background-color: #b4292e;
+      -webkit-box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
+      -moz-box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
+      -o-box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
+      box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
+      color: white;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      margin-right: 20px; }
+      .navbar ul li:hover {
+        -webkit-box-shadow: 0px 5px 0px 0px white;
+        -moz-box-shadow: 0px 5px 0px 0px white;
+        -o-box-shadow: 0px 5px 0px 0px white;
+        box-shadow: 0px 5px 0px 0px white; }
+    .navbar ul a {
+      overflow: hidden; }

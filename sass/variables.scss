@@ -23,3 +23,10 @@ $p-font: 'Open Sans', sans-serif;
   -o-box-shadow: $shadow;
   box-shadow: $shadow;
 }
+
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transitions: $transition;
+  transition: $transition;
+}

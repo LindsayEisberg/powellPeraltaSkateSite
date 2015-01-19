@@ -6,7 +6,7 @@ body {
   padding: 0;
   margin: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../photos/bg.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat; }
 
 ul {
@@ -76,7 +76,11 @@ h3, article h3 > a {
     padding-top: 10px;
     margin-right: 5px; }
     .social a:hover {
-      border-bottom: 5px solid white; }
+      border-bottom: 5px solid white;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transitions: all 1s ease;
+      transition: all 1s ease; }
   .social .fa {
     opacity: 0.7; }
     .social .fa:hover {
@@ -115,7 +119,11 @@ h3, article h3 > a {
         -webkit-box-shadow: 0px 5px 0px 0px white;
         -moz-box-shadow: 0px 5px 0px 0px white;
         -o-box-shadow: 0px 5px 0px 0px white;
-        box-shadow: 0px 5px 0px 0px white; }
+        box-shadow: 0px 5px 0px 0px white;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transitions: all 1s ease;
+        transition: all 1s ease; }
     .navbar ul a {
       overflow: hidden; }
 
@@ -130,10 +138,20 @@ h3, article h3 > a {
     border: 10px solid white;
     height: 330px;
     margin-right: 20px;
+    position: relative;
     -webkit-box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
     -moz-box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
     -o-box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
     box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75); }
+    .slider .slider_back:after {
+      content: "";
+      background: url('../photos/grid.png');
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      opacity: 0.3; }
   .slider img {
     vertical-align: middle;
     margin-top: 55px;
@@ -188,7 +206,11 @@ article {
   .boards a {
     opacity: 1; }
     .boards a:hover {
-      opacity: .5; }
+      opacity: .5;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transitions: all 1s ease;
+      transition: all 1s ease; }
 
 .skaters_left {
   width: 66%;
@@ -259,10 +281,10 @@ article {
   box-shadow: 0px 5px 0px 0px rgba(92, 92, 92, 0.75);
   padding-top: 20px; }
   .contactForm .contact_left, .contactForm .contact_right {
-    width: 45%;
+    width: 55%;
     display: inline-block;
     vertical-align: top;
-    padding-left: 25px; }
+    padding-left: 40px; }
     .contactForm .contact_left p, .contactForm .contact_right p, .contactForm .contact_left h4, .contactForm .contact_right h4 {
       margin-bottom: 25px;
       line-height: 2em; }
@@ -273,9 +295,26 @@ article {
       margin-top: 10px; }
       .contactForm .contact_left .social_bottom:hover, .contactForm .contact_right .social_bottom:hover {
         background-color: #bfbfbf; }
-  .contactForm .contact_right #contact {
-    background: white;
-    padding: 25px;
-    margin: 50px 0; }
-    .contactForm .contact_right #contact fieldset {
-      border: none; }
+  .contactForm .contact_right {
+    width: 35%; }
+    .contactForm .contact_right #contact {
+      background: white; }
+      .contactForm .contact_right #contact fieldset {
+        border: none; }
+        .contactForm .contact_right #contact fieldset input, .contactForm .contact_right #contact fieldset textarea {
+          border-top: 3px solid #9b9999;
+          border-left: 3px solid #9b9999;
+          width: 300px;
+          height: 25px;
+          padding: 2px 0 0 10px; }
+        .contactForm .contact_right #contact fieldset textarea {
+          height: 60px;
+          padding: 5px 0 0 10px; }
+        .contactForm .contact_right #contact fieldset button {
+          padding: 5px 60px 5px 60px;
+          float: right;
+          margin-right: 9px;
+          background-color: #b4292e;
+          color: white;
+          border: none;
+          cursor: pointer; }

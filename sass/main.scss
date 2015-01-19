@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   background: linear-gradient($back-tint,$back-tint), url(../photos/bg.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -93,6 +93,8 @@ h3 {
     margin-right: 5px;
     &:hover {
       border-bottom: 5px solid rgba(255, 255, 255, 1);
+      @include transition(all 1s ease);
+
     }
   }
   .fa {
@@ -142,6 +144,8 @@ h3 {
       margin-right: 20px;
         &:hover {
           @include light-shadow(0px 5px 0px 0px rgba(255,255,255,1));
+          @include transition(all 1s ease);
+
         }
 
         }
@@ -164,9 +168,18 @@ h3 {
   border: 10px solid white;
   height: 330px;
   margin-right: 20px;
+  position: relative;
   @include light-shadow;
-
-
+  &:after {
+    content: "";
+    background: url('../photos/grid.png');
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.3;
+  }
 }
 
   img {
@@ -234,6 +247,8 @@ article {
     opacity: 1;
     &:hover{
       opacity: .5;
+      @include transition(all 1s ease);
+
     }
   }
 
@@ -315,21 +330,20 @@ article {
   margin-right: 20px;
   @include light-shadow;
   padding-top: 20px;
-  .contact_left{
-    width: 45%;
+  .contact_left {
+    width: 55%;
     display: inline-block;
     vertical-align: top;
-    padding-left: 25px;
-    p{
+    padding-left: 40px;
+    p {
       margin-bottom: 25px;
       line-height: 2em;
     }
-
     .social_bottom {
       color:#e2e2e2;
       background-color:#9b9999;
-    padding: 1px 5px 1px 5px;
-    margin-top: 10px;
+      padding: 1px 5px 1px 5px;
+      margin-top: 10px;
       &:hover{
         background-color:#bfbfbf;
       }
@@ -337,14 +351,33 @@ article {
   }
   .contact_right {
     @extend .contact_left;
-      #contact {
-        background:white;
-        padding:25px;
-        margin:10px 0 0 0;
-        fieldset {
+    width: 35%;
+    #contact {
+      background:white;
+      fieldset {
+        border: none;
+        input {
+          border-top: 3px solid #9b9999;
+          border-left: 3px solid #9b9999;
+          width: 300px;
+          height: 25px;
+          padding: 2px 0 0 10px;
+        }
+        textarea {
+          @extend input;
+          height: 60px;
+          padding: 5px 0 0 10px;
+        }
+        button {
+          padding: 5px 60px 5px 60px;
+          float: right;
+          margin-right: 9px;
+          background-color: $navbar;
+          color: white;
           border: none;
-
-      }
+          cursor: pointer;
+        }
       }
     }
   }
+}

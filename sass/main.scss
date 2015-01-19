@@ -6,6 +6,7 @@ body {
   margin: 0;
   background: linear-gradient($back-tint,$back-tint), url(../photos/bg.jpg);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 ul {
@@ -37,6 +38,10 @@ h1, h2, h3, a {
 h1 {
   color: white;
   text-transform: uppercase;
+  font-size: 40px;
+  line-height: 1em;
+  margin: 10% 0 0 0;
+  padding: 0;
 }
 h2 {
   font-weight: 300;
@@ -123,8 +128,8 @@ h3 {
   width: 100%;
   ul {
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     li {
       display: inline-block;
       width: 22.75%;
@@ -157,7 +162,7 @@ h3 {
   background-position-x: 22%;
   background-position-y: 26%;
   border: 10px solid white;
-  height: 350px;
+  height: 330px;
   margin-right: 20px;
   @include light-shadow;
 
@@ -174,7 +179,7 @@ h3 {
 //Dots
 
 .slide_dots {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 .fa-circle.fa-lg {
   color: white;
@@ -193,7 +198,7 @@ article {
     background-color: white;
     @include light-shadow;
     margin-right: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     h3 > a{
       @extend h3;
     }
@@ -203,11 +208,11 @@ article {
   }
 
 .article-wrapper {
-  padding: 10px 20px 10px 20px;
+  padding: 5px 20px 0px 20px;
 }
 
 .link-wrapper {
-  padding:0 0 10px 0;
+  padding:0 0 0 0;
   text-align: center;
 
 }
@@ -222,7 +227,7 @@ article {
   display: flex;
   justify-content: space-between;
   @include light-shadow;
-  margin-top: 3%;
+  margin-top: 2%;
   margin-right: 20px;
   padding: 15px 25px 15px 25px;
   a {
@@ -240,9 +245,10 @@ article {
 
 .skaters_left {
   width: 66%;
-  margin-top: 3%;
+  margin-top: 2%;
   display: inline-block;
   vertical-align: top;
+  text-align: center;
 
   .square_skaters1 {
     width: 47.3%;
@@ -254,6 +260,9 @@ article {
     background-size:363px;
     background-repeat: no-repeat;
     background-position-x: 92%;
+    h1 {
+      margin-top: 20%
+    }
   }
   .square_skaters2 {
     @extend .square_skaters1;
@@ -269,6 +278,11 @@ article {
     width:97%;
     background-repeat: no-repeat;
     margin-top: 10px;
+    background-position-x: 0%;
+    background-position-y: 58%;
+    h1 {
+      margin-top: 10%;
+    }
 
   }
 }
@@ -276,7 +290,8 @@ article {
   width: 32%;
   display: inline-block;
   vertical-align: top;
-  margin-top: 3%;
+  margin-top: 2%;
+  text-align: center;
 .long_skater {
   border: 5px solid white;
   @include light-shadow;
@@ -285,5 +300,51 @@ article {
   width: 97%;
   background-size:800px;
   background-position-x: 80%;
+  background-position-y:37%;
+  h1 {
+    margin-top:50%;
+  }
 }
 }
+
+.contactForm {
+  width: 100%;
+  height: 225px;
+  background-color: white;
+  margin-top:2%;
+  margin-right: 20px;
+  @include light-shadow;
+  padding-top: 20px;
+  .contact_left{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 25px;
+    p{
+      margin-bottom: 25px;
+      line-height: 2em;
+    }
+
+    .social_bottom {
+      color:#e2e2e2;
+      background-color:#9b9999;
+    padding: 1px 5px 1px 5px;
+    margin-top: 10px;
+      &:hover{
+        background-color:#bfbfbf;
+      }
+    }
+  }
+  .contact_right {
+    @extend .contact_left;
+      #contact {
+        background:white;
+        padding:25px;
+        margin:50px 0;
+        fieldset {
+          border: none;
+
+      }
+      }
+    }
+  }

@@ -34,6 +34,10 @@ h1, h2, h3, a {
   font-family: $header-font;
 }
 
+h1 {
+  color: white;
+  text-transform: uppercase;
+}
 h2 {
   font-weight: 300;
   padding: 5px 0 0 0;
@@ -72,6 +76,7 @@ h3 {
 
 .social {
   float: right;
+  margin-right:16px;
   a {
     text-align: center;
     display: inline-block;
@@ -80,7 +85,7 @@ h3 {
     color: white;
     border-bottom: 5px solid rgba(255, 255, 255, 0.7);
     padding-top: 10px;
-    margin-right: 20px;
+    margin-right: 5px;
     &:hover {
       border-bottom: 5px solid rgba(255, 255, 255, 1);
     }
@@ -151,16 +156,14 @@ h3 {
   background-size: 1400px;
   background-position-x: 22%;
   background-position-y: 26%;
-  border: 8px solid white;
+  border: 10px solid white;
   height: 350px;
   margin-right: 20px;
   @include light-shadow;
-/*   &:before {
-  content:'';
-  background: url('../photos/grid.png');
-  opacity: .6;
-} */
+
+
 }
+
   img {
     vertical-align: middle;
     margin-top: 55px;
@@ -185,13 +188,12 @@ section {
 }
 
 article {
-    width: 32%;
+    width: 32.05%;
     display: inline-block;
     background-color: white;
     @include light-shadow;
-    margin-right: 19px;
+    margin-right: 10px;
     margin-top: 20px;
-    flex:1;
     h3 > a{
       @extend h3;
     }
@@ -231,4 +233,57 @@ article {
   }
 
 
+}
+
+//SKATERS
+
+
+.skaters_left {
+  width: 66%;
+  margin-top: 3%;
+  display: inline-block;
+  vertical-align: top;
+
+  .square_skaters1 {
+    width: 47.3%;
+    display: inline-block;
+    border: 5px solid white;
+    @include light-shadow;
+    height: 200px;
+    background: url(../photos/sk8er-4.png);
+    background-size:363px;
+    background-repeat: no-repeat;
+    background-position-x: 92%;
+  }
+  .square_skaters2 {
+    @extend .square_skaters1;
+    background: url(../photos/sk8er-3.png);
+    background-position-x: 2%;
+    background-size: 363px;
+    margin-left: 4px;
+  }
+
+  .bottom_skater {
+    @extend .square_skaters1;
+    background: url(../photos/sk8er-1.png);
+    width:97%;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+
+  }
+}
+.skaters_right {
+  width: 32%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3%;
+.long_skater {
+  border: 5px solid white;
+  @include light-shadow;
+  background: url(../photos/sk8er-2.png);
+  height: 420px;
+  width: 97%;
+  background-size:800px;
+  background-position-x: 80%;
+}
 }

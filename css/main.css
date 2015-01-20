@@ -212,13 +212,13 @@ article {
       -o-transitions: all 1s ease;
       transition: all 1s ease; }
 
-.skaters_left {
+.skaters_left, .skaters_right {
   width: 66%;
   margin-top: 2%;
   display: inline-block;
   vertical-align: top;
   text-align: center; }
-  .skaters_left .square_skaters1, .skaters_left .square_skaters2, .skaters_left .bottom_skater {
+  .skaters_left .square_skaters1, .skaters_right .square_skaters1, .skaters_left .square_skaters2, .skaters_right .square_skaters2, .skaters_left .bottom_skater, .skaters_right .bottom_skater {
     width: 47.3%;
     display: inline-block;
     border: 5px solid white;
@@ -231,21 +231,21 @@ article {
     background-size: 363px;
     background-repeat: no-repeat;
     background-position-x: 92%; }
-    .skaters_left .square_skaters1 h1, .skaters_left .square_skaters2 h1, .skaters_left .bottom_skater h1 {
+    .skaters_left .square_skaters1 h1, .skaters_right .square_skaters1 h1, .skaters_left .square_skaters2 h1, .skaters_right .square_skaters2 h1, .skaters_left .bottom_skater h1, .skaters_right .bottom_skater h1 {
       margin-top: 20%; }
-  .skaters_left .square_skaters2 {
+  .skaters_left .square_skaters2, .skaters_right .square_skaters2, .skaters_left .bottom_skater, .skaters_right .bottom_skater {
     background: url(../photos/sk8er-3.png);
     background-position-x: 2%;
     background-size: 363px;
     margin-left: 4px; }
-  .skaters_left .bottom_skater {
+  .skaters_left .bottom_skater, .skaters_right .bottom_skater {
     background: url(../photos/sk8er-1.png);
     width: 97%;
     background-repeat: no-repeat;
     margin-top: 10px;
     background-position-x: 0%;
     background-position-y: 58%; }
-    .skaters_left .bottom_skater h1 {
+    .skaters_left .bottom_skater h1, .skaters_right .bottom_skater h1 {
       margin-top: 10%; }
 
 .skaters_right {
@@ -328,5 +328,84 @@ article {
     max-width: 500px;
     width: 100%;
     margin: auto; }
-    header .social {
-      float: none; } }
+  .social {
+    float: none;
+    margin-left: 25%;
+    margin-top: 20px; }
+  .navbar {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    display: block; }
+    .navbar ul li {
+      display: block;
+      width: 100%;
+      margin-bottom: 2%;
+      padding: 10px 0 10px 0; }
+  .slider .slider_back {
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-right: 0; }
+    .slider .slider_back:after {
+      display: none; }
+  .slider img {
+    max-width: 500px;
+    width: 100%;
+    margin: 33px auto; }
+  .slide_dots {
+    display: none; }
+  section {
+    display: block; }
+  article {
+    max-width: 480px;
+    width: 100%;
+    margin: 10px auto;
+    display: block;
+    padding-bottom: 10px; }
+  .boards {
+    max-width: 480px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    justify-content: none; }
+    .boards img {
+      margin-right: 29px; }
+  .skate {
+    max-width: 480px; }
+  .skaters_left, .skaters_right {
+    max-width: 480px;
+    width: 100%;
+    display: block;
+    margin: 10px auto; }
+    .skaters_left .square_skaters1, .skaters_right .square_skaters1, .skaters_left .square_skaters2, .skaters_right .square_skaters2, .skaters_left .bottom_skater, .skaters_right .bottom_skater {
+      width: 100%;
+      display: block;
+      background-size: cover; }
+      .skaters_left .square_skaters1 h1, .skaters_right .square_skaters1 h1, .skaters_left .square_skaters2 h1, .skaters_right .square_skaters2 h1, .skaters_left .bottom_skater h1, .skaters_right .bottom_skater h1 {
+        margin-top: 15%; }
+    .skaters_left .square_skaters2, .skaters_right .square_skaters2, .skaters_left .bottom_skater, .skaters_right .bottom_skater {
+      margin-left: 0;
+      margin-top: 10px;
+      background-repeat: no-repeat; }
+    .skaters_left .bottom_skater h1, .skaters_right .bottom_skater h1 {
+      margin-top: 15%; }
+  .skaters_right .long_skater {
+    width: 100%;
+    display: block;
+    height: 200px; }
+    .skaters_right .long_skater h1 {
+      margin-top: 15%; }
+  .contactForm {
+    box-shadow: none;
+    max-width: 500px;
+    width: 100%;
+    margin: 10px auto; }
+    .contactForm .contact_left, .contactForm .contact_right {
+      width: 100%;
+      display: block;
+      padding: 10px; }
+      .contactForm .contact_left p, .contactForm .contact_right p, .contactForm .contact_left h4, .contactForm .contact_right h4 {
+        width: 100%; }
+    .contactForm .contact_right {
+      display: none; } }

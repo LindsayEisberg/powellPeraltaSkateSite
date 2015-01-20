@@ -31,3 +31,11 @@ $p-font: 'Open Sans', sans-serif;
   -o-transitions: $transition;
   transition: $transition;
 }
+
+@mixin boards($rotate) {
+-webkit-transform: rotate($rotate);
+-moz-transform: rotate($rotate);
+-ms-transform: rotate($rotate);
+-o-transform: rotate($rotate);
+transform: rotate($rotate);
+}

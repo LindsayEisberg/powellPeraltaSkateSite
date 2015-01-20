@@ -319,38 +319,46 @@ article {
           border: none;
           cursor: pointer; }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 320px) {
+  body {
+    background: black; }
   .wrapper {
-    max-width: 500px;
-    width: 100%;
-    margin: auto; }
-  header {
-    max-width: 500px;
-    width: 100%;
-    margin: auto; }
+    max-width: 320px;
+    width: 100%; }
+  /* header {
+  max-width: 320px;
+  width:100%;
+  margin: auto;
+
+}
+ */
   .social {
+    clear: both;
     float: none;
-    margin-left: 25%;
-    margin-top: 20px; }
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 0; }
   .navbar {
-    max-width: 500px;
     width: 100%;
-    margin: auto;
     display: block; }
-    .navbar ul li {
-      display: block;
-      width: 100%;
-      margin-bottom: 2%;
-      padding: 10px 0 10px 0; }
+    .navbar ul {
+      margin-left: 0;
+      margin-right: 0; }
+      .navbar ul li {
+        display: block;
+        width: 100%;
+        margin-bottom: 2%;
+        padding: 10px 0 10px 0; }
   .slider .slider_back {
     background: none;
     border: none;
     box-shadow: none;
-    margin-right: 0; }
+    margin-right: 0;
+    height: 220px; }
     .slider .slider_back:after {
       display: none; }
   .slider img {
-    max-width: 500px;
+    max-width: 300px;
     width: 100%;
     margin: 33px auto; }
   .slide_dots {
@@ -358,23 +366,23 @@ article {
   section {
     display: block; }
   article {
-    max-width: 480px;
+    max-width: 320px;
     width: 100%;
     margin: 10px auto;
     display: block;
     padding-bottom: 10px; }
   .boards {
-    max-width: 480px;
+    max-width: 320px;
     width: 100%;
     margin: auto;
     display: block;
-    justify-content: none; }
+    padding: 15px 7px 10px 13px; }
     .boards img {
-      margin-right: 29px; }
+      margin-right: 41px; }
   .skate {
-    max-width: 480px; }
+    max-width: 300px; }
   .skaters_left, .skaters_right {
-    max-width: 480px;
+    max-width: 300px;
     width: 100%;
     display: block;
     margin: 10px auto; }
@@ -397,15 +405,15 @@ article {
     .skaters_right .long_skater h1 {
       margin-top: 15%; }
   .contactForm {
-    box-shadow: none;
-    max-width: 500px;
+    max-width: 320px;
     width: 100%;
-    margin: 10px auto; }
+    margin: 10px auto;
+    display: block; }
     .contactForm .contact_left, .contactForm .contact_right {
       width: 100%;
       display: block;
-      padding: 10px; }
-      .contactForm .contact_left p, .contactForm .contact_right p, .contactForm .contact_left h4, .contactForm .contact_right h4 {
-        width: 100%; }
-    .contactForm .contact_right {
+      padding: 10px;
+      background-color: white; }
+    .contactForm .contact_right #contact {
       display: none; } }
+

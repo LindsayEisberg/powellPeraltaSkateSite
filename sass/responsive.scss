@@ -1,32 +1,36 @@
-@media screen and (max-width:500px) {
+@media screen and (max-width:320px) {
 
-.wrapper {
-  max-width: 500px;
-  width: 100%;
-  margin: auto;
+body {
+  background: black;
 }
+.wrapper {
+  max-width: 320px;
+  width: 100%;
+  }
 
 //header
 
-header {
-  max-width: 500px;
+/* header {
+  max-width: 320px;
   width:100%;
   margin: auto;
 
 }
-
+ */
 .social {
+  clear: both;
   float: none;
-  margin-left: 25%;
+  margin-left: 50px;
   margin-top: 20px;
+  margin-right:0;
 }
 
 .navbar {
-  max-width: 500px;
   width: 100%;
-  margin: auto;
   display: block;
   ul {
+    margin-left: 0;
+    margin-right: 0;
     li {
       display: block;
       width: 100%;
@@ -41,12 +45,13 @@ header {
     border: none;
     box-shadow: none;
     margin-right: 0;
+    height: 220px;
     &:after {
       display: none;
     }
   }
   img {
-    max-width: 500px;
+    max-width: 300px;
     width: 100%;
     margin: 33px auto;
   }
@@ -60,7 +65,7 @@ section {
 }
 
 article {
-  max-width: 480px;
+  max-width: 320px;
   width: 100%;
   margin: 10px auto;
   display: block;
@@ -68,20 +73,20 @@ article {
 }
 
 .boards {
-  max-width: 480px;
+  max-width: 320px;
   width: 100%;
   margin: auto;
   display: block;
-  justify-content: none;
+  padding: 15px 7px 10px 13px;
   img {
-    margin-right: 29px;
+    margin-right: 41px;
   }
 }
 .skate {
-  max-width:480px;
+  max-width:300px;
 }
 .skaters_left {
-  max-width: 480px;
+  max-width: 300px;
   width: 100%;
   display: block;
   margin: 10px auto;
@@ -119,20 +124,27 @@ article {
 }
 
 .contactForm {
-  box-shadow: none;
-  max-width: 500px;
+  max-width: 320px;
   width: 100%;
   margin: 10px auto;
+  display: block;
   .contact_left {
     width:100%;
     display: block;
     padding: 10px;
-    p {
-      width: 100%;
-    }
+    background-color: white;
+
   }
   .contact_right {
+    #contact {
     display: none;
   }
+  }
 }
+}
+
+@media screen and (min-width: 550px) and (max-width:800px) {
+
+
+
 }

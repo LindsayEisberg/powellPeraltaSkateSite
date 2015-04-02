@@ -1,3 +1,5 @@
+
+@import 'variables';
 /* * {
   border: 1px solid black;
 } */
@@ -31,7 +33,7 @@ a {
 }
 
 //FONTS
-h1, h2, h3, a {
+h1, h2, h3, h5 a {
   font-family: $header-font;
 }
 
@@ -286,6 +288,9 @@ article {
     background-position-x: 2%;
     background-size: 363px;
     margin-left: 4px;
+     h1 {
+      margin-top: 20%;
+      }
   }
 
   .bottom_skater {
@@ -342,7 +347,7 @@ article {
     .social_bottom {
       color:#e2e2e2;
       background-color:$contact-color;
-      padding: 1px 5px 1px 5px;
+      padding: 5px 3px 3px 6px;
       margin-top: 10px;
       &:hover{
         background-color:#bfbfbf;
@@ -381,3 +386,439 @@ article {
     }
   }
 }
+
+
+
+///////MEDIA QUERIES//////
+
+
+
+
+
+@media screen and (max-width:800px) {
+
+body {
+  background: black;
+}
+.wrapper {
+  max-width: 800px;
+  width: 100%;
+  }
+
+  .navbar {
+    ul {
+      li {
+          margin-right: 13px;
+      }
+    }
+  }
+.contactForm {
+  .contact_left {
+    width: 44%;
+  }
+}
+
+}
+
+@media screen and (max-width:785px) {
+
+  body {
+   background: black;
+  }
+
+  .wrapper {
+    max-width: 785px;
+    width: 100%;
+  }
+
+  .navbar {
+    display: block;
+    ul {
+      li {
+        display: block;
+        margin-bottom: 10px;
+        width: 33%;
+      }
+    }
+  }
+
+  section {
+  display: block;
+}
+
+article {
+  max-width: 785px;
+  width: 100%;
+  margin: 10px auto;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.skate {
+  max-width: 785px;
+  width: 100%;
+  margin-left: -4%;
+}
+
+.skaters_left {
+.square_skaters1 {
+  margin-bottom: 10px;
+  width: 70%;
+}
+}
+.square_skaters1, .square_skaters2 {
+  width: 70%;
+}
+
+.skaters_right {
+  .long_skater {
+    height: 650px;
+   background-size: cover;
+  }
+}
+
+  .boards {
+  max-width: 750px;
+  width: 100%;
+  margin: auto;
+  padding: 15px 7px 10px 13px;
+  display: block;
+  img {
+   margin-right: 1%;
+   margin-left: 8%;
+  }
+}
+}
+
+@media screen and (max-width:550px) {
+  .wrapper {
+  max-width: 550px;
+  width: 100%;
+
+  }
+
+  .social {
+  clear: both;
+  float: none;
+  
+  margin-top: 20px;
+  margin-right:0;
+}
+
+  .navbar {
+  width: 100%;
+  display: block;
+  ul {
+    margin-left: 0;
+    margin-right: 0;
+    li {
+      display: block;
+      width: 100%;
+      margin-bottom: 2%;
+      padding: 10px 0 10px 0;
+      }
+    }
+  }
+.slider {
+  .slider_back{
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-right: 0;
+    height: 440px;
+    &:after {
+      display: none;
+    }
+  }
+  img {
+  max-width: 550px;
+  width: 100%;
+  margin: 33px auto;
+  display: flex;
+  justify-content: center;
+  }
+}
+
+.slide_dots {
+  display: none;
+}
+section {
+  display: block;
+}
+
+article {
+  max-width: 550px;
+  width: 100%;
+  margin: 10px auto;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.boards {
+  max-width: 550px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 15px 7px 10px 13px;
+  img {
+   margin-right: 6%;
+   margin-left: 15%;
+  }
+}
+.skate {
+  max-width:540px;
+}
+.skaters_left {
+  max-width: 530px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  .square_skaters1 {
+    width: 100%;
+    display: block;
+    background-size: cover;
+    h1 {
+      margin-top: 15%;
+    }
+  }
+  .square_skaters2 {
+    width: 100%;
+    display: block;
+    background-size: cover;
+    margin-left: 0;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+  }
+  .bottom_skater {
+    width: 100%;
+    display: block;
+    background-size: cover;
+    margin-left: 0;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    h1 {
+      margin-top: 15%;
+    }
+  }
+}
+.skaters_right {
+  max-width: 530px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  .long_skater {
+    width: 100%;
+    display: block;
+    height: 200px;
+    h1 {
+      margin-top: 15%;
+    }
+  }
+}
+
+.contactForm {
+  max-width: 550px;
+  width: 100%;
+  margin: 10px auto;
+  background-color:black;
+  display: block;
+  .contact_left {
+    width:100%;
+    display: block;
+    padding: 10px;
+    background-color: white;
+
+  }
+  .contact_right {
+    #contact {
+    display: none;
+  }
+  }
+}
+
+  .contactSocial {
+    display: flex;
+    justify-content: center;
+  }
+  .social_bottom {
+    width: 25px;
+    height: 25px;
+    font-size: 1.5em;
+    margin: 10px 5px 10px 5px;
+  }
+}
+
+
+
+@media screen and (max-width:320px) {
+
+body {
+  background: black;
+}
+.wrapper {
+  max-width: 320px;
+  width: 100%;
+  }
+
+//header
+
+/* header {
+  max-width: 320px;
+  width:100%;
+  margin: auto;
+
+}
+ */
+.social {
+  clear: both;
+  float: none;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-right:0;
+}
+
+.navbar {
+  width: 100%;
+  display: block;
+  ul {
+    margin-left: 0;
+    margin-right: 0;
+    li {
+      display: block;
+      width: 100%;
+      margin-bottom: 2%;
+      padding: 10px 0 10px 0;
+      }
+    }
+  }
+.slider {
+  .slider_back{
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-right: 0;
+    height: 220px;
+    &:after {
+      display: none;
+    }
+  }
+  img {
+  max-width: 320px;
+  width: 100%;
+  margin: 33px auto;
+  display: flex;
+  justify-content: center;
+  }
+}
+
+.slide_dots {
+  display: none;
+}
+section {
+  display: block;
+}
+
+article {
+  max-width: 320px;
+  width: 100%;
+  margin: 10px auto;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.boards {
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  padding: 15px 7px 10px 13px;
+  img {
+   margin-right: 6%;
+   margin-left: 15%;
+  }
+}
+.skate {
+  max-width:310px;
+}
+.skaters_left {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  .square_skaters1 {
+    width: 100%;
+    display: block;
+    background-size: cover;
+    h1 {
+      margin-top: 15%;
+    }
+  }
+  .square_skaters2 {
+    width: 100%;
+    display: block;
+    background-size: cover;
+    margin-left: 0;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+  }
+  .bottom_skater {
+    width: 100%;
+    display: block;
+    background-size: cover;
+    margin-left: 0;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    h1 {
+      margin-top: 15%;
+    }
+  }
+}
+.skaters_right {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  .long_skater {
+    width: 100%;
+    display: block;
+    height: 200px;
+    h1 {
+      margin-top: 15%;
+    }
+  }
+}
+
+.contactForm {
+  max-width: 320px;
+  width: 100%;
+  margin: 10px auto;
+  background-color:black;
+  display: block;
+  .contact_left {
+    width:100%;
+    display: block;
+    padding: 10px;
+    background-color: white;
+
+  }
+  .contact_right {
+    #contact {
+    display: none;
+  }
+  }
+}
+
+  .contactSocial {
+    display: flex;
+    justify-content: center;
+  }
+  .social_bottom {
+    width: 25px;
+    height: 25px;
+    font-size: 1.5em;
+    margin: 10px 5px 10px 5px;
+  }
+}
+
+
+
